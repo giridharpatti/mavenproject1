@@ -17,7 +17,18 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
+   <distributionManagement>
+    <repository>
+        <id>aws-release</id>
+        <name>AWS S3 Release Repository</name>
+        <url>s3://devopslearning.site/release</url>
+    </repository>
+    <snapshotRepository>
+        <id>aws-snapshot</id>
+        <name>AWS S3 Snapshot Repository</name>
+        <url>s3://devopslearning.site/snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
